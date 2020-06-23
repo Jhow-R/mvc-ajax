@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MVC_Ajax.Models.Product>
+
+<u>
+    <b>@ViewBag.Categoria</b>
+</u>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.ProductName
+        </li>
+    }
+</ul>
